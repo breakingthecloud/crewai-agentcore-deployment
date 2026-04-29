@@ -1,0 +1,12 @@
+{
+  "name": "CrewAIAgent",
+  "version": 1,
+  "managedBy": "CDK",
+  "runtimes": [],
+  "memories": [],
+  "credentials": [],
+  "evaluators": [],
+  "onlineEvalConfigs": [],
+  "agentCoreGateways": [],
+  "policyEngines": []
+}
