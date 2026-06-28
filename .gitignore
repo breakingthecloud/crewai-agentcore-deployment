@@ -6,3 +6,4 @@ CrewAIAgent/agentcore/.cache/
 CrewAIAgent/agentcore/.cli/
 CrewAIAgent/agentcore/.llm-context/
 CrewAIAgent/agentcore/.env.local
+.DS_Store
