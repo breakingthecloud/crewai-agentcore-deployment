@@ -1,26 +1,45 @@
-# 🚀 Deploying CrewAI Multi-Agent Teams with Amazon Bedrock Agent Core
+<p align="center">
+  <img alt="CrewAI Agent Core" src="https://img.shields.io/badge/🚀-CrewAI_Agent_Core-FF9900?style=for-the-badge" height="50">
+</p>
 
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://python.org)
-[![CrewAI](https://img.shields.io/badge/CrewAI-📋-orange)](https://crewai.com)
-[![AWS](https://img.shields.io/badge/AWS-Agent%20Core-FF9900)](https://aws.amazon.com/bedrock/agent/)
+<p align="center">
+  <b>Deploy CrewAI multi-agent teams with Amazon Bedrock Agent Core</b><br>
+  Local development → production-ready serverless deployment. No infrastructure management.
+</p>
 
-> From local development to production-ready serverless deployment — no infrastructure management required.
+<p align="center">
+  <a href="#quick-start">Quick Start</a>
+  ·
+  <a href="#repo-structure">Structure</a>
+  ·
+  <a href="#notebook-walkthrough">Walkthrough</a>
+  ·
+  <a href="#prerequisites">Prerequisites</a>
+</p>
 
-## What's This About?
+<p align="center">
+  <img src="https://img.shields.io/badge/license-Apache_2.0-FF9900?style=flat-square" alt="License">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/CrewAI-multi--agent-FF9900?style=flat-square" alt="CrewAI">
+  <img src="https://img.shields.io/badge/AWS-Agent_Core-FF9900?style=flat-square&logo=amazonwebservices" alt="Agent Core">
+  <img src="https://img.shields.io/badge/blog-breakingthecloud.com-blue?style=flat-square" alt="Blog">
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square" alt="PRs">
+</p>
 
-This repo contains the complete, validated code from **[Blog #8: Deploying CrewAI Multi-Agent Teams with Amazon Bedrock Agent Core](https://breakingthecloud.com)**. It demonstrates how to take a CrewAI multi-agent system and deploy it to production using Amazon Bedrock Agent Core's serverless runtime.
+---
+
+From local development to production-ready serverless deployment — no infrastructure management required. This repo contains the complete, validated code from **[Blog #8: Deploying CrewAI Multi-Agent Teams with Amazon Bedrock Agent Core](https://breakingthecloud.com)**.
 
 **The core idea:** You build your AI agents locally with CrewAI, wrap them with a single `@app.entrypoint` decorator, and Agent Core handles the rest — scaling, security, session isolation, and observability.
 
-## 🎯 What You'll Learn
+## What You'll Learn
 
 - **CrewAI Multi-Agent Setup** — Research, Analysis, and Writing agents collaborating on tasks
 - **Bedrock Integration** — Using Claude models through CrewAI's LLM wrapper
 - **Agent Core Deployment** — The full `create → dev → deploy → invoke` workflow
 - **Production Patterns** — Error handling, rate limiting, and real-world deployment considerations
 
-## 📁 Repo Structure
+## Repo Structure
 
 ```
 ├── bedrock-agentcore-crewai-validation.ipynb  # 📓 Full walkthrough notebook (start here)
@@ -34,7 +53,7 @@ This repo contains the complete, validated code from **[Blog #8: Deploying CrewA
         └── pyproject.toml                     # Agent dependencies
 ```
 
-## ⚡ Quick Start
+## Quick Start
 
 ```bash
 # 1. Clone and setup
@@ -52,20 +71,7 @@ python crewai_agent.py
 jupyter lab bedrock-agentcore-crewai-validation.ipynb
 ```
 
-## 📋 Prerequisites
-
-- AWS account with Bedrock model access enabled (Claude Sonnet)
-- Python 3.10+
-- Node.js 20+ (for Agent Core CLI)
-- AWS credentials configured (`aws configure` or SSO)
-
-## 🔑 Key Takeaway
-
-Agent Core is **framework-agnostic** — it works with CrewAI, LangGraph, Strands Agents, Google ADK, OpenAI Agents, or any custom framework. The deployment pattern is always the same: wrap your agent logic with `BedrockAgentCoreApp` and let AWS handle production infrastructure.
-
 ## Notebook Walkthrough
-
-The Jupyter notebook covers:
 
 | Section | Description |
 |---------|-------------|
@@ -77,10 +83,30 @@ The Jupyter notebook covers:
 | **6. Invocation** | Testing the deployed agent via `agent-core invoke` |
 | **7. Production Patterns** | Error handling, rate limits, real-world considerations |
 
+## Prerequisites
+
+- AWS account with Bedrock model access enabled (Claude Sonnet)
+- Python 3.10+
+- Node.js 20+ (for Agent Core CLI)
+- AWS credentials configured (`aws configure` or SSO)
+
+## Key Takeaway
+
+Agent Core is **framework-agnostic** — it works with CrewAI, LangGraph, Strands Agents, Google ADK, OpenAI Agents, or any custom framework. The deployment pattern is always the same: wrap your agent logic with `BedrockAgentCoreApp` and let AWS handle production infrastructure.
+
 ---
 
 📝 **Blog post:** [breakingthecloud.com](https://breakingthecloud.com)
 
 ## License
 
-Apache 2.0
+Apache 2.0.
+
+---
+
+<p align="center">
+  <a href="https://breakingthecloud.com">breakingthecloud.com</a> · <a href="https://cortez.cloud">cortez.cloud</a>
+</p>
+<p align="center">
+  <sub>Build locally. Deploy serverlessly. Scale infinitely.</sub>
+</p>
